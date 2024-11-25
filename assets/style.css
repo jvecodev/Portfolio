@@ -541,7 +541,13 @@ body.dark {
     align-items: center;
     flex-direction: row;
     margin-top: 50px;
-    margin-left: 200px;
+    margin-left: 210px;
+}
+
+.tecnologias img {
+    width: 48px;
+    height: 48px;
+    margin-left: 25px;
 }
 
 .generalinformation img {
