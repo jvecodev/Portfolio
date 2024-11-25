@@ -1,0 +1,685 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=PT+Sans+Narrow:wght@400;700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+@font-face {
+    font-family: 'MinhaFonte';
+    src: url('../fonts/Komigo3D-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+  --font-main: 'roboto mono', monospace;
+  --font-text: 'Lato', sans-serif;
+}
+
+body {
+    font-family: var(--font-main);
+    font-size: 1rem;
+    display: flex;
+    background-color: #ffffff;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+}
+
+body.dark {
+    background-color: #343435;
+}
+
+.navbar {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    background-color: #ffffff;
+    z-index: 1000;
+}
+
+.navbar > .contentNav > .inicio > a {
+    font-size: 2rem;
+    color: #103778;
+    display: flex;
+    font-family: 'MinhaFonte';
+    text-decoration: none;
+}
+
+.navbar > .contentNav > .lenguage > button > img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    filter: contrast(1.5);
+}
+
+.navbar > .contentNav > .lenguage > button {
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.navbar > .contentNav > .lenguage > button > img:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar > .contentNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    font-weight: lighter;
+}	
+
+.navbar > .contentNav > .menu ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    padding: 1rem;
+}
+
+.navbar > .contentNav > .menu ul li a {
+    text-decoration: none;
+    color: #103778;
+    font-size: 1.2rem;
+    font-weight: 100;
+}
+
+.navbar > .contentNav > .menu ul li a:hover {
+    text-decoration: underline #103778 2px solid; 
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+    background: #ffffff;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    background-color: #103778;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: #97A6A0;
+}
+
+hr {
+    width: 70%;
+    border: 0.2px solid red;
+    margin-top: 1rem;
+}
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+.label {
+    background-color: #c2c4c3;
+    border-radius: 60px;
+    cursor: pointer;
+    padding: 20px;
+    width: 90px;
+    position: relative; 
+    transition: background-color 0.2s linear;
+    display: flex;
+    align-items: center;
+}
+
+.label .ball {
+    background-color: #103778;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    left: 6px;
+    height: 30px;
+    width: 30px;
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+    transform: translateX(36px);
+}
+
+
+
+.hamburguer {
+    background: none;
+    border: none;
+    border-top: 3px solid #b8b8b8;
+    cursor: pointer;
+    display: none;
+}
+
+.hamburguer::after,
+.hamburguer::before {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #b8b8b8;
+    margin: 5px 0;
+}
+
+@media (max-width: 788px) {
+    .hamburguer {
+        display: block;
+        z-index: 1;
+    }
+    
+    .list {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        background-color: #7a7a7a;
+        clip-path: circle(1000px at 90% -15%);
+        transition: all .6s ease;
+        width: 80vh;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0rem;
+        pointer-events: none;
+    }
+
+    .menu.active .list {
+        clip-path: circle(1000px at 90% -15%);
+        pointer-events: all;
+    }
+
+}
+
+body.dark {
+    background-color: #343435;
+}
+
+.navbar.dark {
+    background-color: #343435;
+}
+
+.navbar.dark > .contentNav > .inicio > a {
+    color: #e4e4e4;
+}
+
+.navbar.dark > .contentNav > .menu ul li a {
+    color: #cfcfcf;
+}
+
+.label.dark {
+    background-color: #5e5959;
+}
+
+.label.dark .ball {
+    background-color: #cfcfcf;
+}
+
+.content.dark > .sumary > .title > h1,
+.content.dark > .sumary > .title > h2,
+.content.dark > .sumary > .title > p,
+.content.dark > .sumary > .redes > a {
+    color: #cfcfcf;
+}
+
+.content.dark > .sumary > .redes > a:hover {
+    color: #0593A2;
+}
+
+.content.dark > .rightSide img {
+    box-shadow: #0593A2 2px 0px 5px;
+}
+
+
+
+.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 90vh;
+    margin-top: 100px;
+    
+
+}
+
+.content > .sumary{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin-left: 200px;
+
+}
+.content > .sumary > .title {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.content > .sumary > .title > h1{
+    font-size: 3rem;
+    font-weight: bold;
+    color:#103778;
+}
+.content > .sumary > .title > h2{
+    font-size: 2rem;
+    font-weight: lighter;
+    color: #424242;
+}
+
+.content > .sumary > .title > p{
+    font-size: 1.5rem;
+    font-weight: lighter;
+    color: #424242;
+}
+
+.content > .sumary > .redes > a{
+    text-decoration: none;
+    color: #103778;
+    font-size: 2.5rem;
+    font-weight: lighter;
+    margin: 10px;
+}
+.content > .sumary > .redes > a:hover{
+    color: #b4b4b4;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.content > .rightSide img{
+    width: 300px;
+    height: 400px;
+    border-radius: 20px;
+    transition: all 0.5s ease-in-out; 
+}
+
+.content > .rightSide img:hover{
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+.about{
+    display: flex;
+    flex-direction: column;    
+    width: 70%;
+    border-radius: 10px;
+    padding: 3rem;
+    margin: 100px;
+    gap: 3rem;
+    background: url(/imagens/fundoSobre.jpg) no-repeat center center/cover;
+    background-attachment: fixed;
+    border: #103778 1px solid;
+
+
+}
+
+.about > h1{
+    margin: 10px;
+    font-size: 3rem;
+    font-weight: lighter;
+    color:#103778;
+    
+}
+
+.about > main{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.about > main > p{
+    font-size: 1.2rem;
+    font-weight: lighter;
+    color: #103778;
+    text-align: justify;
+    
+    font-family: var(--font-text);
+   
+
+}
+
+
+
+.about > main > img{
+    width: 500px;   
+    height: 500px;
+    border-radius: 20px;
+    transition: all 0.5s ease; 
+    filter: contrast(1.2);
+}
+
+.about > main > img:hover{
+    transform: scale(1.02);
+    transition: all 0.3s ease-in-out;
+}
+
+
+ .Skills{
+    display: flex;
+    flex-direction: column; 
+    width: 100%;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    margin: 50px;
+    gap: 3rem;
+}
+.Skills > .general{
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.Skills > .general > .sólido > .first-solid, .second-solid, .third-solid{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.Skills > h1{
+    margin: 10px;
+    font-size: 2.5rem;
+    font-weight: lighter;
+    color:#103778;
+    
+}
+
+.Skills  h2{
+    margin: 10px;
+    font-size: 1.2rem;
+    font-weight: lighter;
+    color:#103778;
+}
+
+.Skills  .sólido{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    
+    
+
+    
+}
+
+
+
+.Skills  .desenvolvimento{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    
+
+
+}
+
+.Skills > .general h3{
+    font-size: 1rem;
+    font-weight: lighter;
+    display: flex;
+    justify-content: space-around;
+    width: 100%; 
+    border: #103778 1px solid;
+    padding: 0.5rem;
+    border-radius: 10px;
+    filter: contrast(1.5);
+}
+.Skills > .general > .sólido >  .second-solid > h3 > button{
+    
+    padding: 0.2rem;
+}
+
+
+.Skills > .general h3:hover{
+    scale: 1.09;
+    transition: all 0.1s ease-in-out;
+}
+
+.Skills > .general button{
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    
+}
+
+
+
+.projetos {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    border-radius: 10px;
+    padding: 3rem;
+    margin: 50px;
+    gap: 3rem;
+}
+
+.projetos > h1 {
+    margin: 10px;
+    font-size: 2.5rem;
+    font-weight: lighter;
+    color: #103778;
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 660px;
+    height: 380px;
+    background-color: rgba(0, 0, 0, 0.774);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    transition: opacity 0.3s ease;
+    border-radius: 10px;
+    pointer-events: none;
+    gap: 1rem;
+    font-size: 2rem;
+}
+
+.projetos > .todos {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+}
+
+.projetos > .todos p {
+    font-size: 1.2rem;
+    font-weight: lighter;
+    color: #103778;
+    text-align: justify;
+    font-family: var(--font-text);
+    width: 500px;
+}
+
+.projetos > .todos > section.aboutPro {
+    flex-direction: flex;
+    display: flex;
+    gap: 1rem;
+    padding: 3rem;
+    border-radius: 10px;
+    background: url(../imagens/fundoSobre.jpg) no-repeat center center/cover;
+    filter: contrast(1.2);
+    border: #103778 1px solid;
+    justify-content: center;
+    align-items: center;
+}
+
+.generalinformation {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.generalinformation > .tecnologias {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 50px;
+    margin-left: 200px;
+}
+
+.generalinformation img {
+    width: 48px;
+    height: 48px;
+    filter: contrast(1.5);
+}
+
+.projetos > .todos > h2 {
+    font-size: 1.5rem;
+    font-weight: lighter;
+    color: #103778;
+    margin: 30px;
+}
+
+.tecnologias img:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Efeito de hover para a imagem do projeto */
+.imagensprojetos {
+    position: relative;
+    width: 660px;
+    height: 380px;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+    object-fit: cover;
+    filter: contrast(1.2);
+}
+
+.imagensprojetos img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+
+.overlay a {
+    color: white;
+    text-decoration: none;
+    margin: 5px 0;
+}
+
+.imagensprojetos:hover .overlay {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 700px;
+    color: white;
+    padding: 1rem;
+    background: url(../imagens/6195005.jpg) no-repeat center center/cover ;
+    background-attachment: fixed;
+}
+
+.footer  h1{
+    font-size: 2rem;
+    font-weight: lighter;
+    color:rgb(255, 255, 255);
+    margin: 50px;
+}
+
+.footer  h2{
+    font-size: 1.5rem;
+    font-weight: lighter;
+    color:rgb(255, 255, 255);
+    margin: 50px;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 100px;
+}
+
+footer >.contato > .redessociais{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer a{
+    text-decoration: none;
+    font-size: 2.5rem;
+    font-weight: lighter;
+    margin-left:160px;
+    color: rgb(255, 255, 255);
+
+    
+}
+
+.footer a:hover{
+    color: red;
+    transition: all 0.1s ease-in-out;
+}
+
+.autoria{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 50px;
+    font-size: 1.5rem;
+}
+
+.footer hr{
+    width: 99%;
+    border: 0.2px solid #ffffff73;
+    margin-top: 1rem;
+    
+}
+
+.footer > .saudacao{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 50px;
+    font-size: 1.5rem;
+}
+
+.autoria p > a{
+    font-size: 1.5rem;
+    font-weight: lighter;
+    color:rgb(255, 255, 255);
+    margin: 50px;
+}

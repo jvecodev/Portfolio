@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"/>
+    <link rel="stylesheet" href="./assets/darkmode.css">
+    <link rel="shortcut icon" href="./imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/mediascreen.css">
+    
+    <title>Meu Portfólio</title>
+</head>
+<body>
+    <header class="navbar">
+        <main class="contentNav">
+            <main class="lenguage">
+                <button id="btn-pt"><img src="imagens/brasil.png" alt=""></button>
+                <button id="btn-en"><img src="imagens/reinounido.png" alt=""></button>
+            </main>
+            
+            <button class="hamburguer"></button>
+
+            <p class="inicio"><a href="#home"><i class="bi bi-caret-up-fill"></i> </a></p>
+                
+            <nav class="menu">
+                <ul class="list">
+                    <li data-lang="pt"><a href="#sobre">Sobre</a></li>
+                    <li data-lang="en" style="display: none;"><a href="#sobre">About</a></li>
+                    <li data-lang="pt"><a href="#skills">Habilidades</a></li>
+                    <li data-lang="en" style="display: none;"><a href="#skills">Skills</a></li>
+                    <li data-lang="pt"><a href="#projetos">Projetos</a></li>
+                    <li data-lang="en" style="display: none;"><a href="#projetos">Projects</a></li>
+                    <li data-lang="pt"><a href="#contato">Contato</a></li>
+                    <li data-lang="en" style="display: none;"><a href="#contato">Contact</a></li>
+                </ul>
+            </nav>
+            <div>
+                <input type="checkbox" class="checkbox" id="chk" />
+                <label class="label" for="chk">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                    <div class="ball"></div>
+                </label>
+           
+
+            </div>
+        </main>
+        <script src="./assets/darkmode.js"></script>
+       
+        <script>
+            // JavaScript para alternar o menu hamburguer
+            document.querySelector('.hamburguer').addEventListener('click', () => {
+                document.querySelector('.menu').classList.toggle('active');
+            });
+
+            // Java script para retirar o menu se os links forem clicados
+
+            document.querySelectorAll('.list li').forEach((item) => {
+                item.addEventListener('click', () => {
+                    document.querySelector('.menu').classList.remove('active');
+                });
+            });
+        </script>
+    </header>
+    <div class="content" id="home">
+        <main class="sumary">
+            <main class="title" >
+                <h2 data-lang="pt">Olá!</h2>
+                <h2 data-lang="en" style="display: none;">Hello!</h2>
+                <h1 data-lang="pt">Eu sou o João</h1>
+                <h1 data-lang="en" style="display: none;">I'm John </h1>
+                
+
+                <p class="typed-text"></p>
+                <p data-lang="en" style="display: none;" class="typed-text"></p>
+            </main>
+            <main class="redes">
+                <a href="mailto:jvitor.oliveira1803@gmail.com" target="_blank"><i class="bi bi-envelope-fill"></i></a>
+                <a href="https://www.linkedin.com/in/jwoliveira/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                <a href="https://github.com/jvEcodev" target="_blank"><i class="bi bi-github"></i></a>
+            </main>
+        </main>
+        <main class="rightSide">
+            <img src="imagens/me.jpg" alt="">
+        </main>
+    </div>
+
+    <hr class="hr">
+
+    <div class="about" id="sobre">
+        <h1 data-lang="pt">Sobre <i class="bi bi-fingerprint"></i></h1>
+        <h1 data-lang="en" style="display: none;">About <i class="bi bi-fingerprint"></i></h1>
+        <main>
+            <img src="imagens/programador.jpg" alt="">
+            <p data-lang="pt">Meu nome é João Vitor Corrêa Oliveira, tenho 18 anos,  sou natural de Curitiba e curso Sistema de Informação na Pucpr . Desde cedo, desenvolvi uma paixão pela matemática e pela tecnologia, nunca hesitando em buscar conhecimento nessas áreas. Ao longo dos meus anos escolares, participei de olimpíadas de matemática em níveis estadual e nacional, sempre buscando algo que me permitisse expandir meu conhecimento.
+            Estou determinado a  demonstrar minha proficiência em áreas que têm um papel significativo no mercado atual. Valorizo a inovação e o compromisso em diversas áreas e estou entusiasmado para fazer parte de uma empresa que os prioriza. Adquiri habilidades sólidas em programação, principalmente em <strong style="font-size:20px; color: red;">Python, HTML e CSS, JavaScript, Bootstrap, Nodejs, MySql e kivy </strong>,  tanto através de cursos acadêmicos quanto online. Atualmente, estou focado em aprimorar meu conhecimento em <strong  style="font-size:20px; color: red;">React, Django, TyperScript e Java</strong> permitindo-me atuar em front end e back end. Sou um grande defensor do autodidatismo e estou sempre buscando aprender mais, lidando positivamente com os desafios. Acredito que minha paixão pelas áreas de exatas contribui para minha facilidade em resolver problemas e liderar situações entendendo a fundo os sintomas da problemática com o objetivo de sanar qualquer empecilho.
+                
+            </p>
+
+            <p data-lang="en" style="display: none;">
+                My name is João Vitor Corrêa Oliveira, I'm 18 years old, I'm from Curitiba and I'm studying Information Systems at Pucpr. From an early age I developed a passion for mathematics and technology, never hesitating to seek knowledge in these areas. Throughout my school years, I participated in mathematics Olympiads at state and national levels, always looking for something that would allow me to expand my knowledge.
+            I intend to demonstrate my proficiency in areas that play a significant role in today's market. I value innovation and commitment across multiple areas and look forward to being part of a company that prioritizes them. Acquire solid programming skills, especially in <strong style="font-size:20px; color: red;">Python, HTML and CSS, JavaScript, Bootstrap, Nodejs, MySql and Kivy </strong>, both through academic and online courses. Currently, I'm focused on improving my knowledge in <strong style="font-size:20px; color: red;">React, Django, TyperScript and Java</strong> allowing me to work on front end and back end. I am a great supporter of self-education and am always looking to learn more, dealing positively with challenges. I believe that my passion for specific areas contributes to my ease in solving problems and leading situations, understanding the depth of the symptoms of the problem with the aim of remedying any obstacles.
+            </p>
+        </main>
+    </div>
+
+    <hr >
+
+    <div class="Skills" id="skills">
+        <h1 data-lang="pt">Habilidades </h1>
+        <h1 data-lang="en" style="display: none;">Skills </h1>
+
+        <main class="general">
+            <h2 data-lang="pt">Habilidades Sólidas <i class="bi bi-cpu-fill"></i></h2>
+            <h2 data-lang="en" style="display: none;">Solid Skills <i class="bi bi-cpu-fill"></i></h2>
+
+            <main class="sólido">
+                
+
+                <div class="first-solid">
+                    <h3><img src="imagens/python.png" alt=""><button>PYTHON</button></h3>
+                    <h3><img src="imagens/css.png" alt=""> <button>CSS5</button></h3>
+                    <h3><img src="imagens/html.png" alt=""> <button>HTML5</button></h3>
+                    
+                </div>
+                <div class="second-solid">
+                    <h3><img src="imagens/bootstrap.png" alt=""> <button>BOOTSTRAP</button></h3>
+                    <h3><img src="imagens/javascript.png" alt=""> <button>JAVASCRIPT</button></h3>
+                    <h3><img src="imagens/typer.png" alt=""> <button>TYPERSCRIPT</button></h3>
+                    
+                </div>
+                <div class="third-solid">
+                    <h3><img src="imagens/kivy.png" alt=""> <button>KIVY</button></h3>
+                    <h3><img src="imagens/nodejs.png" alt=""> <button>NODEJS</button></h3>
+                    <h3><img src="imagens/mysql.png" alt=""> <button>MYSQL</button></h3>
+                </div>
+                
+            </main>
+            <h2 data-lang="pt">Desenvolvimento <i class="bi bi-hourglass-split"></i></h2>
+            <h2 data-lang="en" style="display: none;"> Development <i class="bi bi-hourglass-split"></i></h2>
+            <main class="desenvolvimento">
+              
+                
+                <h3><img src="imagens/react.png" alt="">   <button>REACT</button></h3>
+                <h3><img src="imagens/django.png" alt=""> <button>DJANGO</button></h3>
+                
+                <h3><img src="imagens/java.png" alt="" > <button>JAVA</button></h3>
+
+            </main>
+        </main>
+    </div>
+
+    <hr >
+
+    <div class="projetos" id="projetos">
+        <h1 data-lang="pt">Projetos <i class="bi bi-gear-wide-connected"></i></h1>
+        <h1 data-lang="en" style="display: none;">Projects <i class="bi bi-gear-wide-connected"></i></h1>
+        
+        <!-- Primeiro Projeto -->
+        <main class="todos">
+            <h2>SkyWatch</h2>
+            <section class="aboutPro">
+                <div class="imagensprojetos" >
+                    <img src="imagens/Sky.png" alt="">
+                    <div class="overlay">
+                        <a href="https://github.com/jvEcodev/SkyWatch" target="_blank"><i class="bi bi-github"></i></a>
+                        <a href="https://jvecodev.github.io/SkyWatch/" target="_blank"><i class="bi bi-box-arrow-up-right"></i></a>
+                    </div>
+                </div>
+                <main class="generalinformation">
+                    <p data-lang="pt">
+                        🧑‍🔬 Sky Watch é uma aplicação que fornece informações meteorológicas em tempo real para diferentes cidades. O objetivo do projeto é ajudar os usuários a obterem previsões precisas do tempo de maneira rápida e fácil.
+                        🏅 O fato de ampliar meus conhecimentos em programação, aliado com a necessidade de ter um ferramennta acessível para consultas diárias me inspirou a iniciar tal aplicação. Com a crescente importância das informações meteorológicas para planejamento de atividades cotidinas, o projeto visa atender esta demanda.
+                    </p>
+                    <p data-lang="en" style="display: none;">
+                        🧑‍🔬 Sky Watch is an application that provides real-time weather information for different cities. The goal of the project is to help users get accurate weather forecasts quickly and easily.
+                        🏅 The fact of expanding my knowledge in programming, combined with the need to have an accessible tool for daily consultations inspired me to start such an application. With the growing importance of meteorological information for planning everyday activities, the project aims to meet this demand.
+                    </p>
+                    <main class="tecnologias">
+                        <img src="imagens/html.png" alt="">
+                        <img src="imagens/css.png" alt="">
+                        <img src="imagens/javascript.png" alt="">
+                        <img src="imagens/bootstrap.png" alt="">
+                        <img src="imagens/APIclima.jpg" alt="" title="API - Open Weather">
+                    </main>
+                </main>
+            </section>
+        </main>
+        <main class="todos">
+            <h2>Choice Coin</h2>
+            <section class="aboutPro">
+                
+                <main class="generalinformation">
+                   
+                    <p data-lang="pt">
+                        🧑‍🔬 O Choice Coin é uma aplicação que permite converter valores entre diferentes moedas existente no mundo. Entregando então uma cotação atualizada diariamente. Faz uso de uma API que fornece taxas de câmbio em tempo real para garantir que as conversões sejam precisas e atualizadas.
+                        🏅 Um projeto interessante e flexível, sendo útil para viajantes, investidores, economistas, traders e exportadores. Simplesmente uma aplicação que amplifica meus entendimentos computacionais acompanhado de alta proficiência no mercado.
+                    </p>
+                    <p data-lang="en" style="display: none;">
+                        🧑‍🔬 Choice Coin is an application that allows you to convert values ​​between different currencies around the world. Then delivering an updated quote daily. Makes use of an API that provides real-time exchange rates to ensure conversions are accurate and up-to-date
+                        🏅 An interesting and flexible project, useful for travelers, investors, economists, traders and exporters. Simply an application that amplifies my computational understanding accompanied by high proficiency in the market.
+                    </p>
+                    <main class="tecnologias">
+                        <img src="imagens/html.png" alt="">
+                        <img src="imagens/javascript.png" alt="">
+                        <img src="imagens/css.png" alt="">
+                        <img src="imagens/bootstrap.png" alt="">
+                        <img src="imagens/exchange API.png" alt="" title="API - exchange">
+                    </main>
+                </main>
+
+                <div class="imagensprojetos" >
+                    <img src="imagens/convert.png" alt="">
+                    <div class="overlay">
+                        <a href="https://github.com/jvEcodev/Currency_Convert_Coin" target="_blank"><i class="bi bi-github"></i></a>
+                        <a href="https://jvecodev.github.io/Currency_Convert_Coin/" target="_blank"><i class="bi bi-box-arrow-up-right"></i></a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <main class="todos">
+            <h2>EasyStock</h2>
+            <section class="aboutPro">
+                <div class="imagensprojetos" >
+                    <img src="imagens/ControleEstoque.png" alt="">
+                    <div class="overlay">
+                        <a href="https://github.com/jvecodev/python/tree/main/BDs" target="_blank"><i class="bi bi-github"></i></a>
+                        
+                    </div>
+                </div>
+                
+                <main class="generalinformation">
+                   
+                    <p data-lang="pt">
+                        🧑‍🔬 O EasyStock é um projeto que consite em ums sistema de copntrole de estoque desenvolvido e python, utilizando a biblioteca Tkinter para interface gráfica e MySQl para gerenciamento do banco de dados.
+                        🏅 O sistema permite o cadastro de novas categorias de produtos.Os produtos podem ser adicionados ao estoque, informando detalhes como nome, descrição, quantidade, preço de compra e venda, e a categoria a qual pertencem.A interface gráfica foi projetada para ser intuitiva e prática, com campos de entrada e botões de ação. Conta também com um sistema de rolagem para acomodar a visualização de grandes quantidades de dados.
+                    </p>
+                    <p data-lang="en" style="display: none;">
+                        🧑‍🔬 EasyStock is a project that consists of a stock control system developed in Python, using the Tkinter library for the graphical interface and MySQL for database management.
+
+                        🏅 The system allows the registration of new product categories. Products can be added to the stock by providing details such as name, description, quantity, purchase price, sale price, and the category they belong to. The graphical interface was designed to be intuitive and practical, with input fields and action buttons. It also features a scrolling system to accommodate the display of large amounts of data.
+                    </p>
+                    <main class="tecnologias">
+                        <img src="imagens/python.png" alt="">
+                        <img src="imagens/icons8-mysql-48.png" alt="">
+                        <img src="imagens/folha.png" alt="" title="Tkinter">
+                        <img src="imagens/mysql (1).png" alt="" title="MySQL Conector - Python">
+
+                        
+                    </main>
+                </main>
+
+               
+            </section>
+        </main>
+        <main class="todos">
+            <h2 data-lang="pt">Calculadora IMC</h2>
+         <h2 data-lang="en" style="display: none;">BMI Calculator</h2>
+            <section class="aboutPro">
+                <div class="imagensprojetos" id="skywatch">
+                    <img src="imagens/IMC.png" alt="">
+                    <div class="overlay">
+                        <a href="https://github.com/jvEcodev/BMI_Calculator" target="_blank"><i class="bi bi-github"></i></a>
+                        <a href="https://jvecodev.github.io/BMI_Calculator/" target="_blank"><i class="bi bi-box-arrow-up-right"></i></a>
+                    </div>
+                </div>
+                <main class="generalinformation">
+                   
+                    <p data-lang="pt">
+                        🧑‍🔬 A Calculadora de IMC (Índice de Massa Corporal) é uma ferramenta simples e eficaz desenvolvida para ajudar as pessoas a monitorarem sua saúde. Utilizando os dados de peso e altura do usuário, a calculadora fornece o IMC. A interface da calculadora é intuitiva e amigável, garantindo uma experiência de uso agradável e acessível para todos.
+                        🏅 A criação da Calculadora de IMC foi motivada pela crescente preocupação com a saúde e o bem-estar da população. Em um mundo onde as doenças relacionadas ao peso estão se tornando cada vez mais comuns.
+                    </p> 
+                    <p data-lang="en" style="display: none;" >
+                        🧑‍🔬 The BMI (Body Mass Index) Calculator is a simple and effective tool developed to help people monitor their health. Using the user's weight and height data, the calculator provides the BMI. The calculator interface is intuitive and user-friendly, ensuring a pleasant and accessible user experience for everyone.
+                        🏅 The creation of the BMI Calculator was motivated by the growing concern for the health and well-being of the population. In a world where weight-related diseases are becoming increasingly common.
+                    </p>
+                    <main class="tecnologias">
+                        <img src="imagens/html.png" alt="">
+                        <img src="imagens/javascript.png" alt="">
+                        <img src="imagens/css.png" alt="">
+                    </main>
+                </main>
+            </section>
+        </main>
+        <main class="todos">
+            <h2 data-lang="pt">Calculadora</h2>
+            <h2 data-lang="en" style="display: none;">Calculator</h2>
+            <section class="aboutPro">
+                <main class="generalinformation">
+                    <p data-lang="pt">
+                        🧑‍🔬 Este projeto consiste no desenvolvimento de uma calculadora utilizando a linguagem de programação Python e a biblioteca Kivy para a interface gráfica. A calculadora possui as funcionalidades básicas de operações matemáticas, como adição, subtração, multiplicação e divisão, além de suportar o cálculo de expressões mais complexas. 🏅 Este projeto foi desenvolvido com o intuito de proporcionar uma ferramenta prática e de fácil utilização para realizar cálculos matemáticos, ao mesmo tempo em que explora as capacidades de desenvolvimento de interfaces gráficas com Python.
+    
+                    </p>
+                    <p data-lang="en" style="display: none;">
+    
+                        🧑‍🔬 This project consists of developing a calculator using the Python programming language and the Kivy library for the graphical interface. The calculator has basic mathematical operation functionalities, such as addition, subtraction, multiplication, and division, as well as supporting the calculation of more complex expressions. 🏅 This project was developed with the aim of providing a practical and easy-to-use tool for performing mathematical calculations, while exploring the capabilities of developing graphical interfaces with Python.
+                    </p>
+    
+                    <main class="tecnologias">
+                        <img src="imagens/python.png" alt="">
+                        <img src="imagens/kivy.png" alt="" title="Kivy">
+                    </main>
+                </main>
+                <div class="imagensprojetos" >
+                    <img src="imagens/calculadora.png" alt="">
+                    <div class="overlay">
+                        <a href="https://github.com/jvEcodev/python/blob/main/calculadora2/myCal.py" target="_blank"><i class="bi bi-github"></i></a>
+                        
+                    </div>
+                </div>
+             
+            </section>
+        </main>
+        <main class="todos">
+            <h2>To do List</h2>
+            <section class="aboutPro">
+                <div class="imagensprojetos" >
+                    <img src="imagens/todolist.png" alt="">
+                    <div class="overlay">
+                        <a href="https://github.com/jvEcodev/TO_DO_LIST_JS" target="_blank"><i class="bi bi-github"></i></a>
+                        <a href="https://jvecodev.github.io/TO_DO_LIST_JS/" target="_blank"><i class="bi bi-box-arrow-up-right"></i></a>
+                    </div>
+                </div>
+                <main class="generalinformation">
+                    <p data-lang="pt">
+                        🔦 Estruture seu cotidiano e amplie sua organizacao com o To do list. Uma ferramente disponivel para smartphones e computadores com arquivo pwa ja em sua composição
+                        Um app nativo, com melhor imersão  e facilidade de uso. A aplicação permite a criação de listas de tarefas personalizadas, com a possibilidade de adicionar, editar e excluir itens.
+                    </p>
+                    <p data-lang="en" style="display: none;">
+                        🔦 Structure your daily life and expand your organization with the To do list. A tool available for smartphones and computers with a pwa file already in its composition
+                        A native app, with better immersion and ease of use. The application allows the creation of personalized task lists, with the possibility of adding, editing, and deleting items.
+                    </p>
+                    <main class="tecnologias">
+    
+                        <img src="imagens/html.png" alt="">
+                        <img src="imagens/javascript.png" alt="">
+                        <img src="imagens/css.png" alt="">
+                    </main>
+                </main>
+            </section>
+        </main>
+
+        
+        
+
+    </div>
+
+
+
+    
+    <div class="footer">
+        <main class="saudacao">
+            <h1>Curitiba-BR</Curitiba-BR> <i class="bi bi-geo-alt-fill"></i></h1>
+            <h2 data-lang="pt">Diga hello <i class="bi bi-telephone-fill"></i></h2>
+            <h2 data-lang="en" style="display: none;">Say hello <i class="bi bi-telephone-fill"></i></h2>
+        </main>
+
+        <hr class="hr">
+
+        <footer>
+        
+            <div class="contato" id="contato">
+        
+                <main class="redessocias">
+        
+                        <a href="mailto:jvitor.oliveira1803@gmail.com" target="_blank"><i class="bi bi-envelope-fill"></i></a>
+                        <a href="https://www.linkedin.com/in/jwoliveira/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://github.com/jvEcodev" target="_blank"><i class="bi bi-github"></i></a>
+        
+                </main>
+                <main class="autoria">
+                    <p>© 2024 João Vitor C. Oliveira</p>
+                    <p data-lang="pt"><a href="tel:5541988734741"> 55 41 98873-4741 </a></p>
+                    <p data-lang="en" style="display: none;"><a href="tel:5541988734741"> 55 41 98873-4741 </a></p>
+                    
+                </main>
+            </div>
+        
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    
+    <script src="./assets/script.js"></script>
+    <script src="./assets/scriptLenguage.js"></script>
+</body>
+</html>

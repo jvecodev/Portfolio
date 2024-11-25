@@ -1,0 +1,180 @@
+body.dark::-webkit-scrollbar-thumb {
+    background-color: #ff0000;
+}
+body.dark::-webkit-scrollbar{
+    background-color: #181818;
+}
+
+body.dark{
+    background-color: #181818;
+}
+
+
+.navbar.dark{
+    background-color: #181818;
+    
+}
+
+.navbar.dark > .contentNav > .inicio > a{
+    color: #ff0000;
+}
+
+.navbar.dark > .contentNav > .menu ul li a{
+    color: #cfcfcf;
+}
+
+.navbar.dark > .contentNav > .menu ul li a:hover{
+    text-decoration: underline #ff0000 2px solid; 
+}
+.label.dark{
+    background-color: #363636;
+}
+.label.dark .ball{
+    background-color: #cfcfcf;
+}
+
+.content.dark > .sumary > .title > h1{
+ color: #ff0000;
+}
+
+
+.content.dark > .sumary > .title > h2,
+.content.dark > .sumary > .title > p,
+.content.dark > .sumary > .redes > a{
+    color: #cfcfcf;
+}
+
+.content.dark > .sumary > .redes > a:hover{
+    color: #ff0000;
+}
+
+.content.dark > .rightSide img{
+    box-shadow: #ff00007a 2px 0px 5px;
+}
+
+
+
+
+
+.navbar.dark .hamburguer::after,
+.navbar.dark .hamburguer::before {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #b8b8b8;
+    margin: 5px 0;
+}
+
+
+@media (max-width: 788px) {
+    .hamburguer {
+        display: block;
+        z-index: 1;
+    }
+    
+    .list {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        background-color: #7a7a7a;
+        clip-path: circle(100px at 90% -10%);
+        transition: all .6s ease;
+        width: 80vh;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0rem;
+        pointer-events: none;
+    }
+}
+
+ 
+
+.about.dark{
+    background-image: url(../imagens/6195005.jpg); ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    border: #ff0000 1px solid;
+
+}
+
+.about.dark >  h1{
+    color: #cfcfcf;
+}
+
+.about.dark  p{
+    color: #cfcfcf;
+}
+
+.Skills.dark > h1{
+    color: #cfcfcf;
+}
+
+.Skills.dark > .general  h2{
+    color: #cfcfcf;
+}
+
+.Skills.dark > .general  h3{
+    font-size: 2rem;
+    font-weight: lighter;
+    color: #97A6A0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%; 
+    border: #cfcfcf 1px solid;
+    padding: 1rem;
+    border-radius: 10px;
+    filter: contrast(1.5);
+    box-shadow: none ;
+}
+
+.Skills.dark > .general button{
+    border: none;
+    cursor: pointer;
+    padding: 1rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    background-color: #ff000000;
+    color: #cfcfcf;
+    
+}
+
+.projetos.dark > .todos > .aboutPro{
+    
+    background: url(../imagens/6195005.jpg) no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    box-shadow: none;
+    padding: 4rem;
+    gap: 1rem;
+    border: #ff0000 1px solid;
+
+    
+}
+
+.projetos.dark h1{
+    color: #cfcfcf;
+}
+
+.projetos.dark h2{
+    color: #cfcfcf;
+}
+
+.projetos.dark p{
+    color: #cfcfcf;
+    font-weight: lighter;
+}
+
+
+.footer.dark a:hover{
+    color: #ff0000;
+    transition: all 0.1s ease-in-out;
+}
+
+
+
