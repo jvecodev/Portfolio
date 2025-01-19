@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Inicialize Typed.js
     var typed = new Typed('.typed-text', {
         
-        strings:['Web Developer'],
+        strings:['Software Developer'],
         typeSpeed: 100,
         backSpeed: 60,
         loop: false
@@ -49,3 +49,32 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+// Array de seções para aplicar o efeito
+var deslizar = [
+    document.getElementById('navbar'),
+    document.getElementById('home'),
+    document.getElementById('tech'),
+    document.getElementById('sobre'),
+    document.getElementById('projetos'),
+    document.getElementById('footer')
+];
+
+// Configuração do ScrollReveal
+ScrollReveal().reveal(deslizar, { 
+    duration: 1000,
+    origin: 'bottom',
+    distance: '50px', 
+    easing: 'ease-in-out', 
+    reset: true 
+});
+
+const track = document.querySelector('.carousel-track');
+
+
+const items = Array.from(track.children);
+items.forEach(item => {
+    const clone = item.cloneNode(true);
+    track.appendChild(clone);
+});
+

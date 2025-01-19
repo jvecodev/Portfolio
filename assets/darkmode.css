@@ -2,16 +2,16 @@ body.dark::-webkit-scrollbar-thumb {
     background-color: #ff0000;
 }
 body.dark::-webkit-scrollbar{
-    background-color: #181818;
+    background-color: #000000;
 }
 
 body.dark{
-    background-color: #181818;
+    background-color: #000000;
 }
 
 
 .navbar.dark{
-    background-color: #181818;
+    background-color: #000000;
     
 }
 
@@ -31,6 +31,9 @@ body.dark{
 }
 .label.dark .ball{
     background-color: #cfcfcf;
+}
+.content.dark{
+    background: url(../imagens/whiteBlack.jpg) no-repeat center center/cover;
 }
 
 .content.dark > .sumary > .title > h1{
@@ -98,7 +101,7 @@ body.dark{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    border: #ff0000 1px solid;
+
 
 }
 
@@ -110,37 +113,19 @@ body.dark{
     color: #cfcfcf;
 }
 
-.Skills.dark > h1{
-    color: #cfcfcf;
-}
-
-.Skills.dark > .general  h2{
-    color: #cfcfcf;
-}
-
-.Skills.dark > .general  h3{
-    font-size: 2rem;
-    font-weight: lighter;
-    color: #97A6A0;
-    display: flex;
-    justify-content: space-between;
-    width: 100%; 
-    border: #cfcfcf 1px solid;
-    padding: 1rem;
-    border-radius: 10px;
-    filter: contrast(1.5);
-    box-shadow: none ;
-}
-
-.Skills.dark > .general button{
-    border: none;
-    cursor: pointer;
-    padding: 1rem;
-    border-radius: 10px;
-    font-size: 1rem;
-    background-color: #ff000000;
-    color: #cfcfcf;
+.skills-container.dark{
+    background: url(../imagens/6195005.jpg) no-repeat center center/cover;
     
+    gap: 1rem;
+  
+}
+
+.skills-container.dark h2{
+    color: #cfcfcf;
+
+}
+.skills-container.dark p{
+    color: #cfcfcf;
 }
 
 .projetos.dark > .todos > .aboutPro{
@@ -152,7 +137,7 @@ body.dark{
     box-shadow: none;
     padding: 4rem;
     gap: 1rem;
-    border: #ff0000 1px solid;
+   
 
     
 }
@@ -170,6 +155,22 @@ body.dark{
     font-weight: lighter;
 }
 
+.footer.dark{
+    background: url(../imagens/whiteBlack.jpg) no-repeat center center/cover;
+    color: #cfcfcf;
+}
+
+.footer.dark a{
+    color: #cfcfcf;
+}
+
+.footer.dark h1{
+    color: #cfcfcf;
+}
+
+.footer.dark h2{
+    color: #cfcfcf;
+}
 
 .footer.dark a:hover{
     color: #ff0000;

@@ -11,9 +11,15 @@ chk.addEventListener('change', () => {
     document.querySelector('.about h1').classList.toggle('dark');
     document.querySelector('.about p').classList.toggle('dark');
     document.querySelector('.about ').classList.toggle('dark');
-    document.querySelector('.Skills').classList.toggle('dark');
     document.querySelector('.projetos ').classList.toggle('dark');
     document.querySelector('.todos h2').classList.toggle('dark');
     document.querySelector('.generalinformation p').classList.toggle('dark');
     document.querySelector('.footer').classList.toggle('dark');
+    document.querySelector('.footer p').classList.toggle('dark');
+    document.querySelector('.footer a').classList.toggle('dark');
+    document.querySelector('.footer h2').classList.toggle('dark');
+    document.querySelector('.footer h1').classList.toggle('dark');
+    document.querySelector('.skills-container h2').classList.toggle('dark');
+    document.querySelector('.skills-container p').classList.toggle('dark');
+    document.querySelector('.skills-container ').classList.toggle('dark');
 });
