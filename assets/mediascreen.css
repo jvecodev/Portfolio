@@ -154,8 +154,6 @@ hr{
         padding: 10px;
         border-radius: 10px;
         background: url(../imagens/fundoSobre.jpg) no-repeat center center/cover;
-        filter: contrast(1.2);
-        
         justify-content: center;
         align-items: center;
     }
@@ -168,7 +166,7 @@ hr{
         box-shadow: none;
         padding: 2rem;
         gap: 2rem;
-        border: #ff0000 1px solid;
+        
     
         
     }
@@ -194,22 +192,22 @@ hr{
     display: flex;
     width: 100%;
     height: 600px;
-    color: white;
-    background: url(../imagens/6195005.jpg) no-repeat center center/cover ;
+    color: #103778;
+    background: url(../imagens/blue.jpg) no-repeat center center/cover ;
     background-attachment: fixed;
 }
 
 .footer  h1{
     font-size: 1.4rem;
     font-weight: lighter;
-    color:rgb(255, 255, 255);
+    color: #103778;
     margin-top: 10px;
 }
 
 .footer  h2{
     font-size: 1.4rem;
     font-weight: lighter;
-    color:rgb(255, 255, 255);
+    color: #103778;
     margin: 10px;
 }
 
@@ -224,7 +222,7 @@ hr{
 .footer a{
     text-decoration: none;
     font-size: 2.5rem;
-    color: rgb(255, 255, 255);
+    color: #103778;
     flex-direction: row;
     margin: 10px;
     
@@ -242,7 +240,7 @@ hr{
 
 .footer hr{
     width: 99%;
-    border: 0.2px solid #ffffff;
+    
     margin-top: 1rem;
     
 }
@@ -256,7 +254,7 @@ hr{
 .autoria p > a{
     font-size: 1rem;
     font-weight: lighter;
-    color:rgb(255, 255, 255);
+    color: #103778;
 }
 
 
@@ -325,7 +323,7 @@ hr{
         padding: 3rem;
         border-radius: 10px;
         background: url(../imagens/fundoSobre.jpg) no-repeat center center/cover;
-        filter: contrast(1.2);
+        
         justify-content: center;
         align-items: center;
     }
@@ -338,7 +336,7 @@ hr{
         box-shadow: none;
         padding: 3rem;
         gap: 2rem;
-        border: #ff0000 1px solid;
+        
     
         
     }
@@ -362,22 +360,22 @@ hr{
     display: flex;
     width: 100%;
     height: 600px;
-    color: white;
-    background: url(../imagens/6195005.jpg) no-repeat center center/cover ;
+    color: #103778;
+    background: url(../imagens/blue.jpg) no-repeat center center/cover ;
     background-attachment: fixed;
 }
 
 .footer  h1{
     font-size: 1.4rem;
     font-weight: lighter;
-    color:rgb(255, 255, 255);
+    color: #103778;
     margin-top: 10px;
 }
 
 .footer  h2{
     font-size: 1.4rem;
     font-weight: lighter;
-    color:rgb(255, 255, 255);
+    color: #103778;
     margin: 10px;
 }
 
@@ -392,7 +390,7 @@ hr{
 .footer a{
     text-decoration: none;
     font-size: 2.5rem;
-    color: rgb(255, 255, 255);
+    color: #103778;
     flex-direction: row;
     margin: 10px;
     
@@ -410,7 +408,7 @@ hr{
 
 .footer hr{
     width: 99%;
-    border: 0.2px solid #ffffff;
+    
     margin-top: 1rem;
     
 }
@@ -424,7 +422,7 @@ hr{
 .autoria p > a{
     font-size: 1rem;
     font-weight: lighter;
-    color:rgb(255, 255, 255);
+    color: #103778;
 }
 
 
@@ -438,6 +436,8 @@ hr{
         width: 5px;
         background-color: #f5f5f5;
     }
+
+    
     
     .content{
         display: flex;
@@ -584,7 +584,7 @@ hr{
     }
 
    
-    
+  
     
     
     .Skills  .desenvolvimento{
@@ -647,20 +647,19 @@ hr{
         padding: 1rem;
         border-radius: 10px;
         background: url(../imagens/fundoSobre.jpg) no-repeat center center/cover;
-        filter: contrast(1.2);
         justify-content: center;
         align-items: center;
     }
     .projetos.dark > .todos > .aboutPro{
         
-        background: url(../imagens/6195005.jpg) no-repeat center center;
+        background: url(../imagens/whiteBlack.jpg) no-repeat center center;
         background-size: cover;
         background-attachment: fixed;
         background-position: center;
         box-shadow: none;
         padding: 1rem;
         gap: 1rem;
-        border: #ff0000 1px solid;
+        
     
         
     }
@@ -686,7 +685,7 @@ hr{
         display: flex;
         width: 100%;
         height: 600px;
-        color: white;
+        color: #103778;
         background: url(../imagens/6195005.jpg) no-repeat center center/cover ;
         background-attachment: fixed;
     }
@@ -694,14 +693,14 @@ hr{
     .footer  h1{
         font-size: 1.4rem;
         font-weight: lighter;
-        color:rgb(255, 255, 255);
+        color: #103778;
         margin-top: 10px;
     }
     
     .footer  h2{
         font-size: 1.4rem;
         font-weight: lighter;
-        color:rgb(255, 255, 255);
+        color: #103778;
         margin: 10px;
     }
     
@@ -716,7 +715,7 @@ hr{
     .footer a{
         text-decoration: none;
         font-size: 2.5rem;
-        color: rgb(255, 255, 255);
+        color: #103778;
         flex-direction: row;
         margin: 10px;
         
@@ -734,7 +733,7 @@ hr{
     
     .footer hr{
         width: 99%;
-        border: 0.2px solid #ffffff;
+        
         margin-top: 1rem;
         
     }
@@ -748,7 +747,7 @@ hr{
     .autoria p > a{
         font-size: 1rem;
         font-weight: lighter;
-        color:rgb(255, 255, 255);
+        color: #103778;
     }
     
     
@@ -927,7 +926,7 @@ hr{
     .projetos {
         display: flex;
         flex-direction: column;
-        width: 70%;
+        width: 100%;
         border-radius: 10px;
         padding: 1rem;
         margin-top: 50px;
@@ -1002,7 +1001,7 @@ hr{
         display: flex;
         border-radius: 10px;
         background: url(../imagens/fundoSobre.jpg) no-repeat center center/cover;
-        filter: contrast(1.2);
+        width: 100%;
         justify-content: center;
         align-items: center;
     }
@@ -1014,7 +1013,7 @@ hr{
         background-position: center;
         box-shadow: none;
         padding: 10px;
-        border: #ff0000 1px solid;
+        
     
         
     }
@@ -1040,22 +1039,22 @@ hr{
         display: flex;
         width: 100%;
         height: 600px;
-        color: white;
-        background: url(../imagens/6195005.jpg) no-repeat center center/cover ;
+        color: #103778;
+        background: url(../imagens/blue.jpg) no-repeat center center/cover ;
         background-attachment: fixed;
     }
     
     .footer  h1{
         font-size: 1.4rem;
         font-weight: lighter;
-        color:rgb(255, 255, 255);
+        color: #103778;
         margin-top: 10px;
     }
     
     .footer  h2{
         font-size: 1.4rem;
         font-weight: lighter;
-        color:rgb(255, 255, 255);
+        color: #103778;
         margin: 10px;
     }
     
@@ -1070,7 +1069,7 @@ hr{
     .footer a{
         text-decoration: none;
         font-size: 2.5rem;
-        color: rgb(255, 255, 255);
+        color: #103778;
         flex-direction: row;
         margin: 10px;
         
@@ -1086,12 +1085,7 @@ hr{
     }
     
     
-    .footer hr{
-        width: 99%;
-        border: 0.2px solid #ffffff;
-        margin-top: 1rem;
-        
-    }
+  
     
     .footer > .saudacao{
         display: flex;

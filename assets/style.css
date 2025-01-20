@@ -185,7 +185,13 @@ hr {
         align-items: center;
         gap: 0rem;
         pointer-events: none;
+        color: #c2c4c3;
+        
     }
+
+   
+
+   
 
     .menu.active .list {
         clip-path: circle(1000px at 90% -15%);
@@ -367,7 +373,17 @@ body.dark {
 }
 
 
+.vercel, .node{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: px;
+    border-radius: 10px;
 
+    
+
+}
 
 
 
@@ -414,6 +430,7 @@ body.dark {
     flex-direction: column;
     gap: 3rem;
     align-items: center;
+    width: 100%;
     
    
 }
