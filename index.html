@@ -50,12 +50,10 @@
         <script src="./assets/darkmode.js"></script>
        
         <script>
-            // JavaScript para alternar o menu hamburguer
             document.querySelector('.hamburguer').addEventListener('click', () => {
                 document.querySelector('.menu').classList.toggle('active');
             });
 
-            // Java script para retirar o menu se os links forem clicados
 
             document.querySelectorAll('.list li').forEach((item) => {
                 item.addEventListener('click', () => {
@@ -188,7 +186,38 @@
         <h1 data-lang="pt">Projetos </h1>
         <h1 data-lang="en" style="display: none;">Projects <i class="bi bi-gear-wide-connected"></i></h1>
         
+        <main class="todos">
+            <h2>Cakeria</h2>
+            <section class="aboutPro">
+                
+                <main class="generalinformation">
+                   
+                    <p data-lang="pt">
+                        <i class="bi bi-cake2-fill"></i>
+                         Cakeria é uma plataforma online para gerenciamento de uma confeitaria, faça seu pedido agora.
+                        
+                    </p>
+                    <p data-lang="en" style="display: none;">
+                        <i class="bi bi-cake2-fill"></i>
+                        Cakeria is an online platform for managing a bakery, make your order now.
+                       
+                    </p>
+                    <main class="tecnologias">
+                        <img src="imagens/nodejs.png" alt="">
+                        <img src="imagens/bootstrap.png" alt="">
+                        <img src="imagens/icons8-mysql-48.png" alt="" title="SQL">
+                        <img src="imagens/sequelize.svg" alt="" title="sequelize">
+                    </main>
+                </main>
 
+                <div class="imagensprojetos" >
+                    <img src="imagens/cakeria.png" alt="">
+                    <div class="overlay">
+                        <a href="https://github.com/LucasStop/cakeria" target="_blank"><i class="bi bi-github"></i></a>
+                    </div>
+                </div>
+            </section>
+        </main>
         <main class="todos">
             <h2>LifeBalance</h2>
             <section class="aboutPro">
@@ -201,12 +230,12 @@
                 </div>
                 <main class="generalinformation">
                     <p data-lang="pt">
-                        🧑‍🔬 O Life Balance é um site de gerenciamento de atividades físicas que ajuda a monitorar o seu desempenho e progresso.
-                        🏅 O aplicativo contabiliza o número de atividades realizadas por mês, permite que você registre as atividades feitas e calcula seu Índice de Massa Corporal (IMC). Com isso, você pode acompanhar seu progresso e manter um equilíbrio saudável entre corpo e mente.
+                        <i class="bi bi-calculator"></i> O Life Balance é um site de gerenciamento de atividades físicas que ajuda a monitorar o seu desempenho e progresso.
+                        <i class="bi bi-heart-pulse-fill"></i> O aplicativo contabiliza o número de atividades realizadas por mês, permite que você registre as atividades feitas e calcula seu Índice de Massa Corporal (IMC). Com isso, você pode acompanhar seu progresso e manter um equilíbrio saudável entre corpo e mente.
                     </p>
                     <p data-lang="en" style="display: none;">
-                        🧑‍🔬 Life Balance is a physical activity management website that helps you monitor your performance and progress.
-                        🏅The application counts the number of activities performed per month, allows you to record the activities done and calculates your Body Mass Index (BMI). With this, you can track your progress and maintain a healthy balance between body and mind.
+                        <i class="bi bi-calculator"></i> Life Balance is a physical activity management website that helps you monitor your performance and progress.
+                        <i class="bi bi-heart-pulse-fill"></i>The application counts the number of activities performed per month, allows you to record the activities done and calculates your Body Mass Index (BMI). With this, you can track your progress and maintain a healthy balance between body and mind.
                     </p>
                     <main class="tecnologias">
                         <img src="imagens/html.png" alt="">
@@ -222,21 +251,61 @@
         </main>
 
         <main class="todos">
-            <h2>EconomizeJa</h2>
+            <h2>Pipocando</h2>
             <section class="aboutPro">
                 
                 <main class="generalinformation">
                    
                     <p data-lang="pt">
-                        🧑‍🔬EconomizeJa é uma aplicação web sendo desenvolvida com o objetivo de reduzir o desperdício de alimentos.
+                        <i class="bi bi-film"></i> Pipocando, um fórum de filmes onde os usuários podem discutir sobre os lançamentos, comentar suas opiniões, e compartilhar recomendações.
+                        
+                    </p>
+                    <p data-lang="en" style="display: none;">
+                        <i class="bi bi-film"></i> Pipocando, a movie forum where users can discuss new releases, share their opinions, and share recommendations.
+                       
+                    </p>
+                    <main class="tecnologias">
+                        <img src="imagens/spring.png" alt="">
+                        <img src="imagens/react.png" alt="">
+                        <img src="imagens/nodejs.png" alt="">
+                        <img src="imagens/typer.png" alt="">
+                        <img src="imagens/bootstrap.png" alt="">
+                        <img src="imagens/MUI.png" alt="" title="Biblioteca MUI">
+                        <img src="imagens/icons8-mysql-48.png" alt="" title="SQL">
+                    </main>
+                </main>
+
+                <div class="imagensprojetos" >
+                    <img src="imagens/pipocando.png" alt="">
+                    <div class="overlay">
+                        <a href="https://github.com/jvecodev/pipocando" target="_blank"><i class="bi bi-github"></i></a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <main class="todos">
+            <h2>EconomizeJa</h2>
+            <section class="aboutPro">
+                
+                <div class="imagensprojetos" >
+                    <img src="imagens/Captura de tela 2024-11-25 000804.png" alt="">
+                    <div class="overlay">
+                        <a href="https://github.com/jvecodev/EconomizeJa2" target="_blank"><i class="bi bi-github"></i></a>
+                        <a href="https://economize-ja2.vercel.app/" target="_blank"><i class="bi bi-box-arrow-up-right"></i></a>
+                    </div>
+                </div>
+                <main class="generalinformation">
+                   
+                    <p data-lang="pt">
+                        <i class="bi bi-cash-coin"></i>  EconomizeJa é uma aplicação web sendo desenvolvida com o objetivo de reduzir o desperdício de alimentos.
                          Nosso projeto conecta consumidores a supermercados, restaurantes e outros estabelecimentos que desejam vender  produtos próximos do vencimento, com pequenos defeitos - tudo isso com preços reduzidos. 
-                        🏅O projeto beneficia tanto os consumidores quanto os estabelecimentos, criando uma solução prática e consciente.
+                        <i class="bi bi-fork-knife"></i> O projeto beneficia tanto os consumidores quanto os estabelecimentos, criando uma solução prática e consciente.
                          
                     </p>
                     <p data-lang="en" style="display: none;">
-                        🧑‍🔬 EconomizeJa is a web application developed with the aim of reducing food waste.
+                        <i class="bi bi-cash-coin"></i> EconomizeJa is a web application developed with the aim of reducing food waste.
                         Our project connects consumers to supermarkets, restaurants and other establishments that want to sell products close to their expiration date, with small defects - all at reduced prices.
-                        🏅The project benefits both consumers and establishments, creating a practical and conscious solution.
+                        <i class="bi bi-fork-knife"></i>The project benefits both consumers and establishments, creating a practical and conscious solution.
                     </p>
                     <main class="tecnologias">
                         <img src="imagens/html.png" alt="">
@@ -249,156 +318,11 @@
                     </main>
                 </main>
 
-                <div class="imagensprojetos" >
-                    <img src="imagens/Captura de tela 2024-11-25 000804.png" alt="">
-                    <div class="overlay">
-                        <a href="https://github.com/jvecodev/EconomizeJa2" target="_blank"><i class="bi bi-github"></i></a>
-                        <a href="https://economize-ja2.vercel.app/" target="_blank"><i class="bi bi-box-arrow-up-right"></i></a>
-                    </div>
-                </div>
-            </section>
-        </main>
-        <main class="todos">
-            <h2>SkyWatch</h2>
-            <section class="aboutPro">
-                <div class="imagensprojetos" >
-                    <img src="imagens/Sky.png" alt="">
-                    <div class="overlay">
-                        <a href="https://github.com/jvEcodev/SkyWatch" target="_blank"><i class="bi bi-github"></i></a>
-                        <a href="https://jvecodev.github.io/SkyWatch/" target="_blank"><i class="bi bi-box-arrow-up-right"></i></a>
-                    </div>
-                </div>
-                <main class="generalinformation">
-                    <p data-lang="pt">
-                        🧑‍🔬 Sky Watch é uma aplicação que fornece informações meteorológicas em tempo real para diferentes cidades. O objetivo do projeto é ajudar os usuários a obterem previsões precisas do tempo de maneira rápida e fácil.
-                        🏅 O fato de ampliar meus conhecimentos em programação, aliado com a necessidade de ter um ferramennta acessível para consultas diárias me inspirou a iniciar tal aplicação. Com a crescente importância das informações meteorológicas para planejamento de atividades cotidinas, o projeto visa atender esta demanda.
-                    </p>
-                    <p data-lang="en" style="display: none;">
-                        🧑‍🔬 Sky Watch is an application that provides real-time weather information for different cities. The goal of the project is to help users get accurate weather forecasts quickly and easily.
-                        🏅 The fact of expanding my knowledge in programming, combined with the need to have an accessible tool for daily consultations inspired me to start such an application. With the growing importance of meteorological information for planning everyday activities, the project aims to meet this demand.
-                    </p>
-                    <main class="tecnologias">
-                        <img src="imagens/html.png" alt="">
-                        <img src="imagens/css.png" alt="">
-                        <img src="imagens/javascript.png" alt="">
-                        <img src="imagens/bootstrap.png" alt="">
-                        <img src="imagens/APIclima.jpg" alt="" title="API - Open Weather">
-                    </main>
-                </main>
-            </section>
-        </main>
-        <main class="todos">
-            <h2>Choice Coin</h2>
-            <section class="aboutPro">
-                
-                <main class="generalinformation">
-                   
-                    <p data-lang="pt">
-                        🧑‍🔬 O Choice Coin é uma aplicação que permite converter valores entre diferentes moedas existente no mundo. Entregando então uma cotação atualizada diariamente. Faz uso de uma API que fornece taxas de câmbio em tempo real para garantir que as conversões sejam precisas e atualizadas.
-                        🏅 O aplicativo contabiliza o número de atividades realizadas por mês, permite que você registre as atividades feitas e calcula seu Índice de Massa Corporal (IMC). Com isso, você pode acompanhar seu progresso e manter um equilíbrio saudável entre corpo e mente.
-                    </p>
-                    <p data-lang="en" style="display: none;">
-                        🧑‍🔬 Choice Coin is an application that allows you to convert values ​​between different currencies around the world. Then delivering an updated quote daily. Makes use of an API that provides real-time exchange rates to ensure conversions are accurate and up-to-date
-                        🏅 An interesting and flexible project, useful for travelers, investors, economists, traders and exporters. Simply an application that amplifies my computational understanding accompanied by high proficiency in the market.
-                    </p>
-                    <main class="tecnologias">
-                        <img src="imagens/html.png" alt="">
-                        <img src="imagens/javascript.png" alt="">
-                        <img src="imagens/css.png" alt="">
-                        <img src="imagens/bootstrap.png" alt="">
-                        <img src="imagens/exchange API.png" alt="" title="API - exchange">
-                    </main>
-                </main>
-
-                <div class="imagensprojetos" >
-                    <img src="imagens/convert.png" alt="">
-                    <div class="overlay">
-                        <a href="https://github.com/jvEcodev/Currency_Convert_Coin" target="_blank"><i class="bi bi-github"></i></a>
-                        <a href="https://jvecodev.github.io/Currency_Convert_Coin/" target="_blank"><i class="bi bi-box-arrow-up-right"></i></a>
-                    </div>
-                </div>
-            </section>
-        </main>
-        <main class="todos">
-            <h2>EasyStock</h2>
-            <section class="aboutPro">
-                <div class="imagensprojetos" >
-                    <img src="imagens/ControleEstoque.png" alt="">
-                    <div class="overlay">
-                        <a href="https://github.com/jvecodev/python/tree/main/BDs" target="_blank"><i class="bi bi-github"></i></a>
-                        
-                    </div>
-                </div>
-                
-                <main class="generalinformation">
-                   
-                    <p data-lang="pt">
-                        🧑‍🔬 O EasyStock é um projeto que consite em ums sistema de copntrole de estoque desenvolvido e python, utilizando a biblioteca Tkinter para interface gráfica e MySQl para gerenciamento do banco de dados.
-                        🏅 O sistema permite o cadastro de novas categorias de produtos.Os produtos podem ser adicionados ao estoque, informando detalhes como nome, descrição, quantidade, preço de compra e venda, e a categoria a qual pertencem.A interface gráfica foi projetada para ser intuitiva e prática, com campos de entrada e botões de ação. Conta também com um sistema de rolagem para acomodar a visualização de grandes quantidades de dados.
-                    </p>
-                    <p data-lang="en" style="display: none;">
-                        🧑‍🔬 EasyStock is a project that consists of a stock control system developed in Python, using the Tkinter library for the graphical interface and MySQL for database management.
-
-                        🏅 The system allows the registration of new product categories. Products can be added to the stock by providing details such as name, description, quantity, purchase price, sale price, and the category they belong to. The graphical interface was designed to be intuitive and practical, with input fields and action buttons. It also features a scrolling system to accommodate the display of large amounts of data.
-                    </p>
-                    <main class="tecnologias">
-                        <img src="imagens/python.png" alt="">
-                        <img src="imagens/icons8-mysql-48.png" alt="">
-                        <img src="imagens/folha.png" alt="" title="Tkinter">
-                        <img src="imagens/mysql (1).png" alt="" title="MySQL Conector - Python">
-
-                        
-                    </main>
-                </main>
-
-               
             </section>
         </main>
        
-
-       
-       
-        
-        <main class="todos">
-            <h2>EconomizeJa-PHP</h2>
-            <section class="aboutPro">
-                
-                <main class="generalinformation">
-                    <p data-lang="pt">
-                        🧑‍🔬 EconomizeJa é uma aplicação web sendo desenvolvida com o objetivo de reduzir o desperdício 
-                        de alimentos. Nosso projeto conecta consumidores a supermercados. 🏅 Diferentemente, do outro projeto, 
-                        esta vertente foi feita com o PHP. Neste modelo, foi priorizado a relação de cadastro de produtos, 
-                        inserção do produto ao carrinho e outras funcionalidades
-
-
-                    </p>
-                    <p data-lang="en" style="display: none;">
-                        🧑‍🔬 Sky Watch is an application that provides real-time weather information for different cities. The goal of the project is to help users get accurate weather forecasts quickly and easily.
-                        🏅 The fact of expanding my knowledge in programming, combined with the need to have an accessible tool for daily consultations inspired me to start such an application. With the growing importance of meteorological information for planning everyday activities, the project aims to meet this demand.
-                    </p>
-                    <main class="tecnologias">
-                        <img src="imagens/html.png" alt="">
-                        <img src="imagens/css.png" alt="">
-                        <img src="imagens/javascript.png" alt="">
-                        <img src="imagens/bootstrap.png" alt="">
-                        <img src="imagens/php.png" alt="" title="">
-                        <img src="imagens/icons8-mysql-48.png" alt="" title="">
-                    </main>
-                </main>
-                <div class="imagensprojetos" >
-                    <img src="imagens/EcoPHP-img.png" alt="">
-                    <div class="overlay">
-                        
-                        <a href="https://github.com/jvecodev/EconomizeJa-PHP1" target="_blank"><i class="bi bi-box-arrow-up-right"></i></a>
-                    </div>
-                </div>
-                
-            </section>
-        </main>
-
-        
-        
-
+     
+    
     </div>
 
 

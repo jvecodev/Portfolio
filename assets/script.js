@@ -1,5 +1,4 @@
 
-//Efeito de rolagem suave
 document.querySelectorAll('ul a').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
     e.preventDefault();
@@ -10,10 +9,8 @@ document.querySelectorAll('ul a').forEach(anchor => {
 });
 });
 
-// efeito de titulo digitado
 
 document.addEventListener("DOMContentLoaded", () => {
-    // Inicialize Typed.js
     var typed = new Typed('.typed-text', {
         
         strings:['Software Developer'],
@@ -23,7 +20,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-//funcao mouseover
 
 function getProjects() {
     const projetos = document.querySelector('.aboutPro');   
@@ -50,7 +46,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// Array de seções para aplicar o efeito
 var deslizar = [
     document.getElementById('navbar'),
     document.getElementById('home'),
@@ -60,7 +55,6 @@ var deslizar = [
     document.getElementById('footer')
 ];
 
-// Configuração do ScrollReveal
 ScrollReveal().reveal(deslizar, { 
     duration: 1000,
     origin: 'bottom',

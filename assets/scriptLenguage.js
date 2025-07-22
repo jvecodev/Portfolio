@@ -1,4 +1,3 @@
-// script.js
 document.getElementById('btn-pt').addEventListener('click', function() {
     switchLanguage('pt');
 });
